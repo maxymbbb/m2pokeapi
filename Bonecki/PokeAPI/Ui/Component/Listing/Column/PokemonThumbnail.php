@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Bonecki\PokeAPI\Ui\Component\Listing\Column;
 
