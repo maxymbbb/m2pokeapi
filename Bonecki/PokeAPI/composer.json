@@ -1,0 +1,16 @@
+{
+    "name": "bonecki/module-pokeapi",
+    "description": "Display Pokemon name and image in product details and grid",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Bonecki\\PokeAPI\\": ""
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Product additional attributes template
+ *
+ * @var $block \Magento\Catalog\Block\Product\View\Attributes
+ */
+?>
+<?php
+$_helper = $this->helper(Bonecki\PokeAPI\Helper\PokeAPI::class);
+$_product = $block->getProduct();
+$pokemonInfo = $_helper->requestPokemon($block->getProduct()->getPokemonName());
+?>
+<img class="pokeimg" id="<?php echo $pokemonInfo['name']; ?>" src="<?php echo $pokemonInfo['sprites']['front_default']; ?>">
+
+<script type="text/javascript">
+    var span = document.getElementsByClassName("base")[0]
+    span.innerHTML=document.getElementsByClassName("pokeimg")[0].id
+</script>

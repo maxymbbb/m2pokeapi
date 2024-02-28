@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="pokemonapi" translate="label" sortOrder="999">
+			<label>Pokemon API</label>
+		</tab>
+		<section id="pokeapi" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>Configuration</label>
+			<tab>pokemonapi</tab>
+			<resource>Bonecki_PokeAPI::config_bonecki_pokeapi</resource>
+			<group id="options" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>Options</label>
+				<field id="pokeapi_url" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>PokeAPI URL</label>
+					<comment>PokeAPI REST API v2 url</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
